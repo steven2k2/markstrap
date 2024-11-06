@@ -1,5 +1,7 @@
-# markstrap
+# Markstrap
 Markstrap is a lightweight, single-page application built with Express and Bootstrap that converts Markdown input into Bootstrap-styled HTML.
+
+![Screenshot](images/screenshot.jpg)
 
 ## Features
 
@@ -7,6 +9,8 @@ Markstrap is a lightweight, single-page application built with Express and Boots
 - **Bootstrap Integration**: Automatically applies Bootstrap classes to headings, lists, tables, and more.
 - **Live Preview**: Displays the converted HTML output in real-time within a responsive Bootstrap container.
 - **Clean & Minimalist Design**: Uses Bootstrap's styling for a user-friendly interface.
+
+
 
 ## Getting Started
 
