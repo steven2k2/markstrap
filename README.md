@@ -19,7 +19,7 @@ Markstrap is a lightweight, single-page application built with Express and Boots
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/yourusername/markstrap.git
+   git clone https://github.com/steven2k2/markstrap.git
    cd markstrap
    npm install
    npm start
