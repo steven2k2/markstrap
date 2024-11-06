@@ -66,7 +66,7 @@ function parseToBootstrap(elements) {
     const outputHtml = elements.map(element => {
         switch (element.type) {
             case 'heading':
-                const headingClass = element.depth === 1 ? 'display-1' : `h${element.depth}`;
+                const headingClass = element.depth === 1 ? 'display-6' : `h${element.depth}`;
                 return `<h${element.depth} class="${headingClass}">${element.text}</h${element.depth}>`;
 
             case 'paragraph':
