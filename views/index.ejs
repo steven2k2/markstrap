@@ -10,36 +10,70 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
 </head>
 <body class="bg-light">
+
+<nav class="navbar navbar-dark bg-primary sticky-top p-0">
+    <a class="navbar-brand d-flex align-items-center text-nowrap px-3" href="#">
+        <span class="material-symbols-outlined">markdown_paste</span>
+        &nbsp;Markstrap
+    </a>
+
+    <ul class="navbar-nav flex-row ml-auto px-3">
+        <li class="nav-item mx-2" aria-disabled="true">
+            <a class="nav-link" href="#" title="Help">
+                <span class="material-symbols-outlined">help</span>
+            </a>
+        </li>
+        <li class="nav-item mx-2" aria-disabled="true">
+            <a class="nav-link" href="#" title="Settings">
+                <span class="material-symbols-outlined">settings</span>
+            </a>
+        </li>
+        <li class="nav-item mx-2" aria-disabled="true">
+            <a class="nav-link" href="#" title="Applications">
+                <span class="material-symbols-outlined">apps</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 <div class="container my-5">
-    <h1 class="text-center">Markstrap</h1>
-    <p class="text-center">Convert Markdown to Bootstrap-styled HTML</p>
-
-    <!-- Markdown Input Form -->
-    <form action="/convert" method="POST" class="my-4">
-        <div class="form-group">
-            <label for="markdownText">Enter Markdown</label>
-            <textarea
-                    name="markdownText"
-                    id="markdownText"
-                    class="form-control"
-                    rows="6"
-                    required
-            ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mt-3">Convert</button>
-    </form>
-
-    <!-- Display the converted HTML -->
-    <% if (content) { %>
-        <h2>Bootstrap</h2>
-        <div class="card mt-3">
-            <div class="card-body">
-                <%- content %> <!-- Outputs raw HTML content -->
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    Markdown
+                </div>
+                <div class="card-body">
+                    <form action="/convert" method="POST" class="my-4">
+                        <div class="form-group">
+                            <textarea
+                                    name="markdownText"
+                                    id="markdownText"
+                                    class="form-control monospace-input"
+                                    rows="6"
+                                    required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Convert</button>
+                    </form>
+                </div>
             </div>
         </div>
-    <% } %>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    Preview
+                </div>
+                <div class="card-body">
+                    <%- content %>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
