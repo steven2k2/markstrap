@@ -28,7 +28,7 @@ Markstrap is a lightweight, single-page application built with Express and Boots
    npm install
    npm start
 ```
-
+The app will start on http://localhost:3000. Open this URL in your browser to access the Markdown converter.
 
 ## License
 
